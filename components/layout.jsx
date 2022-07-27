@@ -28,6 +28,15 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
+            <video
+              height={288}
+              src="/black.mp4"
+              className={styles.headerVideo}
+              loop
+              muted
+              autoPlay
+              type="video/mp4"
+            />
             <Image
               priority
               src="/images/cat.jpg"
@@ -36,7 +45,11 @@ export default function Layout({ children, home }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1
+              className={`${utilStyles.heading2Xl}  ${styles.headerTextColor}`}
+            >
+              {name}
+            </h1>
           </>
         ) : (
           <>

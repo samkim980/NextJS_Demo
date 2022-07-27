@@ -13,3 +13,13 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.headerVideo {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+}
+
+.headerTextColor {
+  color: white;
+}
